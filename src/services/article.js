@@ -20,4 +20,6 @@ export const articleApi = createApi({
     }),
 })
 
+//This "hook" 'useLazyGetSummaryQuery' from redux/toolkit allows me to fire the hook on demand.
+//Because I don't want to call it immediately when the app starts, just when it's needed.
 export const { useLazyGetSummaryQuery } = articleApi
